@@ -1,4 +1,5 @@
 import React from "react";
+import Artwork from "./Artwork";
 
 
 function Gallery({ artworks, setArtworks }) {
