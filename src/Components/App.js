@@ -21,9 +21,9 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Gallery artworks={artworks} setArtworks={setArtworks} />} />
-        <Route path="/" element={<About />} />
-        <Route path="/" element={<Favorites />} />
+        <Route path="/Gallery" element={<Gallery artworks={artworks} setArtworks={setArtworks} />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Favorites" element={<Favorites />} />
       </Routes>
     </div>
   )

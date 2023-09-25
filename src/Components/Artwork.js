@@ -12,6 +12,13 @@ function Artwork( { artist, title, image, date, medium, description } ) {
         }
     }
 
+    function descCheck() {
+        if (description == "" || " ") {
+            return `${title} ${artistCheck} ${date}`
+        } else {
+        return description
+    }
+
     return (
         <div>
             <h1>{title}</h1>
@@ -19,9 +26,9 @@ function Artwork( { artist, title, image, date, medium, description } ) {
             <h2>{artistCheck}</h2>
             <p>{date}</p>
             <p>{medium}</p>
-            <p>{description}</p>
+            <p>{descCheck}</p>
         </div>
-    )
+    )}
 }
 
 
