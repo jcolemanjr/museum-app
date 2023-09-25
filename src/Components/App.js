@@ -18,14 +18,14 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Gallery artworks={artworks} setArtworks={setArtworks} />} />
         <Route path="/" element={<About />} />
         <Route path="/" element={<Favorites />} />
       </Routes>
-    </>
+    </div>
   )
 };
 

@@ -10,7 +10,7 @@ function Gallery({ artworks, setArtworks }) {
             <Artwork
                 key={piece.accessionNumber}
                 artist={piece.artist}
-                name={piece.title}
+                title={piece.title}
                 image={piece.image}
                 date={piece.date}
                 medium={piece.medium}
@@ -21,7 +21,7 @@ function Gallery({ artworks, setArtworks }) {
     })
 
     return (
-        <></>
+        <div>{artPiece}</div>
     )
 }
 
