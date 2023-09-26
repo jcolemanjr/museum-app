@@ -3691,16 +3691,5 @@
       "galleryInformation": "On view at The Met Fifth Avenue in <a href='https://maps.metmuseum.org/?feature=LTczLjk2MzU2NjgyLDQwLjc3OTc2MDQyQGxtQDg3MTUzODU2OTI3Nw==' target='_blank'>Gallery 306</a>"
     }
   ],
-  "Favorites": [
-    {
-      "title": "Zanze",
-      "artist": "Ashanti (Asante)",
-      "image": "https://images.metmuseum.org/CRDImages/mi/mobile-large/midp89.2.190.jpg",
-      "date": "late 19th century",
-      "medium": "Wood",
-      "description": "Ashanti (Asante) (Africa)",
-      "accessionNumber": "89.2.190",
-      "id": 1
-    }
-  ]
+  "Favorites": []
 }

@@ -1,9 +1,19 @@
 import React from "react";
 
-function Artwork({artist, title, image, date, medium, description, addToFavorites,
-  removeFromFavorites, isFavorite, accessionNumber}) {
-
-// console.log(accessionNumber)
+function Artwork({
+  artist,
+  title,
+  image,
+  date,
+  medium,
+  description,
+  addToFavorites,
+  removeFromFavorites,
+  isFavorite,
+  accessionNumber,
+  id,
+}) {
+  // console.log(accessionNumber)
 
   function artistCheck() {
     if (artist === "") {
@@ -35,14 +45,23 @@ function Artwork({artist, title, image, date, medium, description, addToFavorite
       <p>Medium: {medium}</p>
       <p>Description: {descCheck()}</p>
       {isFavorite ? (
-        <button
-          onClick={(e) => removeFromFavorites({title, artist, image, date, medium, description, accessionNumber})}>
-            Remove From Favorites
+        <button onClick={() => removeFromFavorites(id)}>
+          Remove From Favorites
         </button>
       ) : (
         <button
           onClick={() =>
-            addToFavorites({ title, artist, image, date, medium, description, accessionNumber })}>
+            addToFavorites({
+              title,
+              artist,
+              image,
+              date,
+              medium,
+              description,
+              accessionNumber,
+            })
+          }
+        >
           Add to Favorites
         </button>
       )}
