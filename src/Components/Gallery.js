@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Artwork from "./Artwork";
-
+import Search from "./Search";
 
 function Gallery({ artworks, setArtworks }) {
 
+    const [filteredArtwork, setfilteredArtwork] = useState('')
+    console.log(filteredArtwork)
+
+    const filteredArt = artworks.filter((art) => {
+        return (
+            (art.title?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+            (art.artist?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+            (art.date?.toString()?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+            (art.medium?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+            (art.culture?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+            (art.description?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false)
+
+        )
+    })
+
+
+
     //map goes here --- creating an Artwork component for each item
-    const artPiece = artworks.map((piece) => {
+    const artPiece = filteredArt.map((piece) => {
         return (
             <Artwork
                 key={`${piece.accessionNumber}${piece.image}`}
@@ -21,7 +38,11 @@ function Gallery({ artworks, setArtworks }) {
     })
 
     return (
-        <div>{artPiece}</div>
+        <div>
+            <Search setfilteredArtwork={setfilteredArtwork} />
+
+            <div>{artPiece}</div>
+        </div>
     )
 }
 

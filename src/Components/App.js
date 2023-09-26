@@ -20,7 +20,7 @@ function App() {
   console.log("Hi")
 
   //FOR A HEADER LETS GO AHEAD AND JUST PLACE IT INSIDE OF EACH COMPONENT TO CREATE THE SAME HEADER FOR EACH
-
+  
   return (
     <div>
     <Router>
