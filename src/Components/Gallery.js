@@ -1,31 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Artwork from "./Artwork";
 import Search from "./Search";
 
 function Gallery({ artworks, setArtworks }) {
   const [favorites, setfavorites] = useState([]);
   const [filteredArtwork, setfilteredArtwork] = useState("");
-  console.log(filteredArtwork);
+//   console.log(filteredArtwork);
+
+  useEffect(() => {
+    // Fetch the initial state of favorites
+    fetch('http://localhost:3000/Favorites')
+      .then((res) => res.json())
+      .then((data) => setfavorites(data));
+  }, []);
 
   const filteredArt = artworks.filter((art) => {
     return (
-      (art.title?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ??
-        false) ||
-      (art.artist?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ??
-        false) ||
-      (art.date
-        ?.toString()
-        ?.toLowerCase()
-        ?.includes(filteredArtwork.toLowerCase()) ??
-        false) ||
-      (art.medium?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ??
-        false) ||
-      (art.culture?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ??
-        false) ||
-      (art.description
-        ?.toLowerCase()
-        ?.includes(filteredArtwork.toLowerCase()) ??
-        false)
+      (art.title?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+      (art.artist?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+      (art.date?.toString()?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+      (art.medium?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+      (art.culture?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+      (art.description?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false)
     );
   });
 
@@ -63,11 +59,17 @@ function Gallery({ artworks, setArtworks }) {
         date={piece.date}
         medium={piece.medium}
         description={piece.description}
+        accessionNumber={piece.accessionNumber}
         addToFavorites={addToFavorites}
         removeFromFavorites={removeFromFavorites}
         isFavorite={favorites.some(
-          (fav) => fav.accessionNumber === piece.accessionNumber
+            (fav) => {
+             console.log(fav.accessionNumber)
+             return fav.accessionNumber === piece.accessionNumber}
         )}
+
+          
+        
         //maybe create a ternary for if item is on-display based on {piece.galleryInformation}
       />
     );
