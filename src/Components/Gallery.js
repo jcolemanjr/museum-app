@@ -8,7 +8,7 @@ function Gallery({ artworks, setArtworks }) {
     const artPiece = artworks.map((piece) => {
         return (
             <Artwork
-                key={piece.accessionNumber}
+                key={`${piece.accessionNumber}${piece.image}`}
                 artist={piece.artist}
                 title={piece.title}
                 image={piece.image}
