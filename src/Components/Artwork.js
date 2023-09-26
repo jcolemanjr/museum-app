@@ -23,8 +23,8 @@ function Artwork({ artist, title, image, date, medium, description }) {
       <img
         onClick={() => console.log("Works")}
         src={image}
-        alt={`This is a piece called ${description} by ${artist}`}
-        title={title}
+        alt={`This is a piece called ${descCheck()} by ${artistCheck()}`}
+        title={`This is a piece called ${descCheck()} by ${artistCheck()}`}
       />
       <h2>{artistCheck()}</h2>
       <p>{date}</p>
