@@ -26,10 +26,10 @@ function Artwork({ artist, title, image, date, medium, description }) {
         alt={`This is a piece called ${descCheck()} by ${artistCheck()}`}
         title={`This is a piece called ${descCheck()} by ${artistCheck()}`}
       />
-      <h2>{artistCheck()}</h2>
-      <p>{date}</p>
-      <p>{medium}</p>
-      <p>{descCheck()}</p>
+      <h3>Artist: {artistCheck()}</h3>
+      <p>Date: {date}</p>
+      <p>Medium: {medium}</p>
+      <p>Description: {descCheck()}</p>
     </div>
   );
 }
