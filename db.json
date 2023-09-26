@@ -3693,12 +3693,13 @@
   ],
   "Favorites": [
     {
-      "title": "Africa",
-      "artist": "Royal Porcelain Manufactory, Berlin",
-      "image": "https://images.metmuseum.org/CRDImages/es/mobile-large/170280.jpg",
-      "date": "1751–57",
-      "medium": "Hard-paste porcelain",
-      "description": "Royal Porcelain Manufactory, Berlin (German, founded 1763)",
+      "title": "Zanze",
+      "artist": "Ashanti (Asante)",
+      "image": "https://images.metmuseum.org/CRDImages/mi/mobile-large/midp89.2.190.jpg",
+      "date": "late 19th century",
+      "medium": "Wood",
+      "description": "Ashanti (Asante) (Africa)",
+      "accessionNumber": "89.2.190",
       "id": 1
     }
   ]

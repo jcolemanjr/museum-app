@@ -1,16 +1,10 @@
 import React from "react";
 
-function Artwork({
-  artist,
-  title,
-  image,
-  date,
-  medium,
-  description,
-  addToFavorites,
-  removeFromFavorites,
-  isFavorite,
-}) {
+function Artwork({artist, title, image, date, medium, description, addToFavorites,
+  removeFromFavorites, isFavorite, accessionNumber}) {
+
+// console.log(accessionNumber)
+
   function artistCheck() {
     if (artist === "") {
       return "Unknown Artist";
@@ -42,25 +36,13 @@ function Artwork({
       <p>Description: {descCheck()}</p>
       {isFavorite ? (
         <button
-          onClick={() =>
-            removeFromFavorites({
-              title,
-              artist,
-              image,
-              date,
-              medium,
-              description,
-            })
-          }
-        >
-          Remove From Favorites
+          onClick={(e) => removeFromFavorites({title, artist, image, date, medium, description, accessionNumber})}>
+            Remove From Favorites
         </button>
       ) : (
         <button
           onClick={() =>
-            addToFavorites({ title, artist, image, date, medium, description })
-          }
-        >
+            addToFavorites({ title, artist, image, date, medium, description, accessionNumber })}>
           Add to Favorites
         </button>
       )}
