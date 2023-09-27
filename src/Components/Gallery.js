@@ -74,7 +74,7 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
 
   return (
     <div>
-      <h1>Here's some art, Bitch</h1>
+      <h1>Galleria</h1>
       <Search setfilteredArtwork={setfilteredArtwork} />
       <div>{artPiece}</div>
     </div>

@@ -1,5 +1,16 @@
 {
-  "Favorites": [],
+  "Favorites": [
+    {
+      "title": "Africa",
+      "artist": "Royal Porcelain Manufactory, Berlin",
+      "image": "https://images.metmuseum.org/CRDImages/es/mobile-large/170280.jpg",
+      "date": "1751–57",
+      "medium": "Hard-paste porcelain",
+      "description": "Royal Porcelain Manufactory, Berlin (German, founded 1763)",
+      "accessionNumber": "59.208.16",
+      "id": 1
+    }
+  ],
   "Artwork": [
     {
       "title": "Africa",
