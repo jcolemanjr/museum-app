@@ -4,6 +4,10 @@ import Artwork from "./Artwork";
 function Favorites({removeFromFavorites, favorites}) {
 
 
+
+    //&& <--- is the logical AND operator. It's used to conditionally render the element on its right only if the condition on its left is true.
+
+
     return (
         <div>
             <h1>Favorites</h1>
