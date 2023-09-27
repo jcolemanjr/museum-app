@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import Artwork from "./Artwork";
 import Search from "./Search";
 
-function Gallery({ artworks, setArtworks }) {
-  const [favorites, setfavorites] = useState([]);
+function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
+
+  // const [favorites, setfavorites] = useState([]);
   const [filteredArtwork, setfilteredArtwork] = useState("");
   //   console.log(filteredArtwork);
 
@@ -15,24 +16,12 @@ function Gallery({ artworks, setArtworks }) {
   }, []);
 
   const filteredArt = artworks.filter((art) => {
-    return (
-      (art.title?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ??
-        false) ||
-      (art.artist?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ??
-        false) ||
-      (art.date
-        ?.toString()
-        ?.toLowerCase()
-        ?.includes(filteredArtwork.toLowerCase()) ??
-        false) ||
-      (art.medium?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ??
-        false) ||
-      (art.culture?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ??
-        false) ||
-      (art.description
-        ?.toLowerCase()
-        ?.includes(filteredArtwork.toLowerCase()) ??
-        false)
+    return ((art.title?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+      (art.artist?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+      (art.date ?.toString() ?.toLowerCase() ?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+      (art.medium?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+      (art.culture?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+      (art.description ?.toLowerCase() ?.includes(filteredArtwork.toLowerCase()) ?? false)
     );
   });
 
@@ -85,6 +74,7 @@ function Gallery({ artworks, setArtworks }) {
 
   return (
     <div>
+      <h1>Here's some art, Bitch</h1>
       <Search setfilteredArtwork={setfilteredArtwork} />
       <div>{artPiece}</div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 
 function Artwork({
+  isOnFavorites,
   artist,
   title,
   image,
@@ -44,7 +45,7 @@ function Artwork({
       <p>Date: {date}</p>
       <p>Medium: {medium}</p>
       <p>Description: {descCheck()}</p>
-      {isFavorite ? (
+      {isFavorite || isOnFavorites ? (
         <button onClick={() => removeFromFavorites(id)}>
           Remove From Favorites
         </button>

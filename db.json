@@ -1,4 +1,5 @@
 {
+  "Favorites": [],
   "Artwork": [
     {
       "title": "Africa",
@@ -3690,6 +3691,5 @@
       "accessionNumber": "41.170.100",
       "galleryInformation": "On view at The Met Fifth Avenue in <a href='https://maps.metmuseum.org/?feature=LTczLjk2MzU2NjgyLDQwLjc3OTc2MDQyQGxtQDg3MTUzODU2OTI3Nw==' target='_blank'>Gallery 306</a>"
     }
-  ],
-  "Favorites": []
+  ]
 }
