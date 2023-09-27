@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import Gallery from './Gallery';
 import About from './About';
 import Favorites from './Favorites';
-
+import '../Stylesheets/Artwork.css';
 
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
     <Router>
     <Navbar/>
       <Routes>
-        <Route exact path="/About" element={<About />} />
+        <Route exact path="/Home" element={<About />} />
         <Route exact path="/Gallery" element={<Gallery favorites={favorites} setfavorites={setfavorites} artworks={artworks} setArtworks={setArtworks} />} />
         <Route exact path="/Favorites" element={<Favorites favorites={favorites} removeFromFavorites={removeFromFavorites} setfavorites={setfavorites} />} />
       </Routes>

@@ -1,0 +1,107 @@
+/* Resetting default margins and paddings */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+css * {
+    font-family: "MetSans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/* Setting a background color or image for the website */
+body {
+    background-color: #ffe3b0; /* Light brown background */
+    
+}
+
+.about{
+    text-align: center;
+    font-family: "MetSans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.favorites{
+    text-align: center;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.galleryHeader{
+    text-align: center;
+}
+
+/* Creating a header for the website */
+header {
+    background-color: #333; /* Dark gray header */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling the navigation menu */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444; /* Dark gray navigation background */
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Styling the main content area */
+.main-content {
+    padding: 20px;
+}
+
+/* Creating a grid layout for the gallery */
+.artpiece {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+/*this makes the columns*/
+.artwork{
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box;
+}
+
+.favorites{
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box;
+}
+
+/* Styling individual artwork details */
+.artpiece {
+    background-color: #fff; /* White background */
+    padding: 10px;
+    text-align: center;
+}
+
+.artpiece {
+    font-weight: bold;
+}
+
+.artpiece {
+    font-style: italic;
+    color: #000000; /* Gray text */
+}
+/* Styling the footer */
+footer {
+    background-color: #333; /* Dark gray footer */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
