@@ -33,8 +33,8 @@ function Artwork({
   }
 
   return (
-    <div>
-      <h1>{title}</h1>
+    <div className = "artwork">
+      <h2>{title}</h2>
       <img
         onClick={() => console.log("Works")}
         src={image}

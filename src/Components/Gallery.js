@@ -18,10 +18,10 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
   const filteredArt = artworks.filter((art) => {
     return ((art.title?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
       (art.artist?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
-      (art.date ?.toString() ?.toLowerCase() ?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+      (art.date?.toString()?.toLowerCase() ?.includes(filteredArtwork.toLowerCase()) ?? false) ||
       (art.medium?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
       (art.culture?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
-      (art.description ?.toLowerCase() ?.includes(filteredArtwork.toLowerCase()) ?? false)
+      (art.description?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false)
     );
   });
 
@@ -76,7 +76,7 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
     <div>
       <h1>Galleria</h1>
       <Search setfilteredArtwork={setfilteredArtwork} />
-      <div>{artPiece}</div>
+      <div className ="artpiece">{artPiece}</div>
     </div>
   );
 }

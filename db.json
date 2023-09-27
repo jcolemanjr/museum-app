@@ -9,6 +9,16 @@
       "description": "Royal Porcelain Manufactory, Berlin (German, founded 1763)",
       "accessionNumber": "59.208.16",
       "id": 1
+    },
+    {
+      "title": "Africa",
+      "artist": "Frankenthal Porcelain Manufactory",
+      "image": "https://images.metmuseum.org/CRDImages/es/mobile-large/170277.jpg",
+      "date": "ca. 1765",
+      "medium": "Hard-paste porcelain",
+      "description": "Frankenthal Porcelain Manufactory (German)",
+      "accessionNumber": "59.208.13",
+      "id": 2
     }
   ],
   "Artwork": [

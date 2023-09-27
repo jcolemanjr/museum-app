@@ -3,11 +3,13 @@ body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
-
+css * {
+    font-family: "MetSans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 /* Setting a background color or image for the website */
 body {
     background-color: #ffe3b0; /* Light brown background */
-    font-family: Arial, sans-serif;
+    
 }
 
 /* Creating a header for the website */
@@ -21,7 +23,7 @@ header {
 /* Styling the navigation menu */
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #444; /* Dark gray navigation background */
     padding: 10px 0;
 }
@@ -38,18 +40,21 @@ nav a {
 }
 
 /* Creating a grid layout for the gallery */
-.gallery {
+.artpiece {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.gallery-item {
+.artwork {
     position: relative;
     overflow: hidden;
+    width: 100%; /* Ensure each item takes up the full width of the column */
+    max-width: 100%; /* Ensure images don't exceed the width of the column */
+    box-sizing: border-box;
 }
 
-.gallery-item img {
+. {
     max-width: 100%;
     display: block;
 }
@@ -69,7 +74,6 @@ nav a {
     font-style: italic;
     color: #777; /* Gray text */
 }
-
 /* Styling the footer */
 footer {
     background-color: #333; /* Dark gray footer */
