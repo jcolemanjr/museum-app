@@ -1,0 +1,82 @@
+/* Resetting default margins and paddings */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting a background color or image for the website */
+body {
+    background-color: #ffe3b0; /* Light brown background */
+    font-family: Arial, sans-serif;
+}
+
+/* Creating a header for the website */
+header {
+    background-color: #333; /* Dark gray header */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling the navigation menu */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444; /* Dark gray navigation background */
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Styling the main content area */
+.main-content {
+    padding: 20px;
+}
+
+/* Creating a grid layout for the gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Styling individual artwork details */
+.artwork-details {
+    background-color: #fff; /* White background */
+    padding: 10px;
+    text-align: center;
+}
+
+.artwork-title {
+    font-weight: bold;
+}
+
+.artwork-artist {
+    font-style: italic;
+    color: #777; /* Gray text */
+}
+
+/* Styling the footer */
+footer {
+    background-color: #333; /* Dark gray footer */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
