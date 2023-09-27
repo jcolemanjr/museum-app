@@ -12,6 +12,24 @@ body {
     
 }
 
+.about{
+    text-align: center;
+    font-family: "MetSans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.favorites{
+    text-align: center;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.galleryHeader{
+    text-align: center;
+}
+
 /* Creating a header for the website */
 header {
     background-color: #333; /* Dark gray header */
@@ -45,34 +63,37 @@ nav a {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-
-.artwork {
+/*this makes the columns*/
+.artwork{
     position: relative;
     overflow: hidden;
-    width: 100%; /* Ensure each item takes up the full width of the column */
-    max-width: 100%; /* Ensure images don't exceed the width of the column */
+    width: 100%; 
+    max-width: 100%; 
     box-sizing: border-box;
 }
 
-. {
-    max-width: 100%;
-    display: block;
+.favorites{
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box;
 }
 
 /* Styling individual artwork details */
-.artwork-details {
+.artpiece {
     background-color: #fff; /* White background */
     padding: 10px;
     text-align: center;
 }
 
-.artwork-title {
+.artpiece {
     font-weight: bold;
 }
 
-.artwork-artist {
+.artpiece {
     font-style: italic;
-    color: #777; /* Gray text */
+    color: #000000; /* Gray text */
 }
 /* Styling the footer */
 footer {

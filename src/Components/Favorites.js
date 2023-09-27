@@ -9,8 +9,12 @@ function Favorites({removeFromFavorites, favorites}) {
 
 
     return (
+    <div>
         <div>
-            <h1>Favorites</h1>
+            <h1 className="favorites">Favorites</h1>
+            </div>
+        <div className ="artpiece">
+            
             {favorites.length < 1 && <p className="visitorNote">Add some artwork, bitch!</p>}  {/* <---- feature by Tyler Taylor*/}
             {favorites.map(artwork => (
                 <Artwork 
@@ -21,6 +25,7 @@ function Favorites({removeFromFavorites, favorites}) {
                 />
             ))}
         </div>
+    </div>
     )
 }
 
