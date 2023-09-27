@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import Artwork from "./Artwork";
 import Search from "./Search";
 
-function Gallery({ artworks, setArtworks }) {
-  const [favorites, setfavorites] = useState([]);
+function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
+
+  // const [favorites, setfavorites] = useState([]);
   const [filteredArtwork, setfilteredArtwork] = useState("");
   //   console.log(filteredArtwork);
 
