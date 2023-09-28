@@ -2,6 +2,7 @@ import React from "react";
 
 function Artwork({
   isOnFavorites,
+  onClick,
   artist,
   title,
   image,
@@ -36,7 +37,10 @@ function Artwork({
     <div className="artwork">
       <h2>{title}</h2>
       <img
-        onClick={() => console.log("Works")}
+        onClick={() => {
+          console.log("Works")
+          onClick()
+        }}
         src={image}
         alt={`This is a piece called ${descCheck()} by ${artistCheck()}`}
         title={`This is a piece called ${descCheck()} by ${artistCheck()}`}

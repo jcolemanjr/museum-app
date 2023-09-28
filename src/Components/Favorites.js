@@ -3,9 +3,15 @@ import Artwork from "./Artwork";
 
 function Favorites({removeFromFavorites, favorites}) {
 useEffect(() => {
-  const audio = document.querySelector(".thirdAudio");
+  const audio = document.querySelector(".fourthAudio");
   audio.volume = 0.2;
 }, []);
+
+const [selectedArtwork, setSelectedArtwork] = useState(null);
+
+const handleArtworkClick = (artwork) => {
+  setSelectedArtwork(artwork);
+};
 
 
     //&& <--- is the logical AND operator. It's used to conditionally render the element on its right only if the condition on its left is true.
@@ -14,8 +20,8 @@ useEffect(() => {
     return (
       <div>
         <audio
-          className="thirdAudio"
-          src="/Assets/symphony2.mp3"
+          className="fourthAudio"
+          src="/Assets/One Night in Bangkok.mp3"
           type="audio/mpeg"
           autoPlay
         />
@@ -33,9 +39,15 @@ useEffect(() => {
               key={artwork.id}
               isOnFavorites={true}
               {...artwork}
+              onClick={() => handleArtworkClick(artwork)}
             />
           ))}
         </div>
+        {selectedArtwork && (
+        <div className="interstitial">
+          <img className="interimage" onClick={() => setSelectedArtwork(null)} src={selectedArtwork.image} alt={selectedArtwork.title} />
+        </div>
+      )}
       </div>
     );
 }
