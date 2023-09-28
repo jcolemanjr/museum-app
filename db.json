@@ -1,5 +1,36 @@
 {
-  "Favorites": [],
+  "Favorites": [
+    {
+      "title": "Africa",
+      "artist": "Royal Porcelain Manufactory, Berlin",
+      "image": "https://images.metmuseum.org/CRDImages/es/mobile-large/170280.jpg",
+      "date": "1751–57",
+      "medium": "Hard-paste porcelain",
+      "description": "Royal Porcelain Manufactory, Berlin (German, founded 1763)",
+      "accessionNumber": "59.208.16",
+      "id": 1
+    },
+    {
+      "title": "Africa",
+      "artist": "Frankenthal Porcelain Manufactory",
+      "image": "https://images.metmuseum.org/CRDImages/es/mobile-large/170277.jpg",
+      "date": "ca. 1765",
+      "medium": "Hard-paste porcelain",
+      "description": "Frankenthal Porcelain Manufactory (German)",
+      "accessionNumber": "59.208.13",
+      "id": 2
+    },
+    {
+      "title": "Drum",
+      "artist": "Ashanti (Asante)",
+      "image": "https://images.metmuseum.org/CRDImages/mi/mobile-large/203718.jpg",
+      "date": "19th century",
+      "medium": "Wood, hide, associated human skulls",
+      "description": "Ashanti (Asante) (Africa)",
+      "accessionNumber": "89.4.1271",
+      "id": 3
+    }
+  ],
   "Artwork": [
     {
       "title": "Africa",
