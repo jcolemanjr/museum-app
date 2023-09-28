@@ -33,7 +33,7 @@ function Artwork({
   }
 
   return (
-    <div className = "artwork">
+    <div className="artwork">
       <h2>{title}</h2>
       <img
         onClick={() => console.log("Works")}
@@ -46,11 +46,15 @@ function Artwork({
       <p>Medium: {medium}</p>
       <p>Description: {descCheck()}</p>
       {isFavorite || isOnFavorites ? (
-        <button onClick={() => removeFromFavorites(id)}>
-          Remove From Favorites
+        <button
+          className="removeButton"
+          onClick={() => removeFromFavorites(id)}
+        >
+          <span>Remove From Favorites</span>
         </button>
       ) : (
         <button
+          className="addButton"
           onClick={() =>
             addToFavorites({
               title,
@@ -63,7 +67,7 @@ function Artwork({
             })
           }
         >
-          Add to Favorites
+          <span>Add to Favorites</span>
         </button>
       )}
     </div>

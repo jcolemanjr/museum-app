@@ -51,7 +51,7 @@ function App() {
     <Router>
     <Navbar/>
       <Routes>
-        <Route exact path="/Home" element={<About />} />
+        <Route exact path="/" element={<About />} />
         <Route exact path="/Gallery" element={<Gallery favorites={favorites} setfavorites={setfavorites} artworks={artworks} setArtworks={setArtworks} />} />
         <Route exact path="/Favorites" element={<Favorites favorites={favorites} removeFromFavorites={removeFromFavorites} setfavorites={setfavorites} />} />
       </Routes>

@@ -3,6 +3,10 @@ import Artwork from "./Artwork";
 import Search from "./Search";
 
 function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
+  useEffect(() => {
+    const audio = document.querySelector(".firstAudio");
+    audio.volume = 0.2;
+  }, []);
 
   // const [favorites, setfavorites] = useState([]);
   const [filteredArtwork, setfilteredArtwork] = useState("");
@@ -74,9 +78,15 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
 
   return (
     <div>
-      <h1 className="galleryHeader">Galleria</h1>
+      <audio
+        className="firstAudio"
+        src="/Assets/symphony2.mp3"
+        type="audio/mpeg"
+        autoPlay
+      />
+      <h1 className="galleryHeader">Gallery</h1>
       <Search setfilteredArtwork={setfilteredArtwork} />
-      <div className ="artpiece">{artPiece}</div>
+      <div className="artpiece">{artPiece}</div>
     </div>
   );
 }
