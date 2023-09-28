@@ -13,14 +13,14 @@ function App() {
   const [favorites, setfavorites] = useState([]);
   
   useEffect(() => {
-    fetch('http://localhost:3000/Artwork')
+    fetch('http://localhost:3001/Artwork')
     .then((res) => res.json())
     .then((data) => setArtworks(data));
   }, []);
 
 
   useEffect(() => {
-    fetch('http://localhost:3000/Favorites')
+    fetch('http://localhost:3001/Favorites')
         .then(r => r.json())
         .then((data) => setfavorites(data))
 }, [])
@@ -30,7 +30,7 @@ function App() {
     const updatedFavorites = favorites.filter((fav) => fav.id !== id);
     setfavorites(updatedFavorites);
 
-    await fetch(`http://localhost:3000/Favorites/${id}`, {
+    await fetch(`http://localhost:3001/Favorites/${id}`, {
       method: "DELETE",
     })
     .then(r => r.json())

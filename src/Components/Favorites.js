@@ -4,7 +4,7 @@ import Artwork from "./Artwork";
 function Favorites({removeFromFavorites, favorites}) {
 useEffect(() => {
   const audio = document.querySelector(".fourthAudio");
-  audio.volume = 0.2;
+  audio.volume = 0.1;
 }, []);
 
 const [selectedArtwork, setSelectedArtwork] = useState(null);
@@ -19,12 +19,7 @@ const handleArtworkClick = (artwork) => {
 
     return (
       <div>
-        <audio
-          className="fourthAudio"
-          src="/Assets/One Night in Bangkok.mp3"
-          type="audio/mpeg"
-          autoPlay
-        />
+        <audio className="fourthAudio" src="/Assets/One Night in Bangkok.mp3" type="audio/mpeg" autoPlay />
         <div>
           <h1 className="favorites">Favorites</h1>
         </div>
