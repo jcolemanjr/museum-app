@@ -19,10 +19,10 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
 
   useEffect(() => {
     // Fetch the initial state of favorites
-    fetch("http://localhost:3000/Favorites")
+    fetch("http://localhost:3001/Favorites")
       .then((res) => res.json())
       .then((data) => setfavorites(data));
-  }, []);
+  },[]);
 
   const filteredArt = artworks.filter((art) => {
     return ((art.title?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
@@ -35,7 +35,7 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
   });
 
   const addToFavorites = async (artwork) => {
-    await fetch("http://localhost:3000/Favorites", {
+    await fetch("http://localhost:3001/Favorites", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -52,7 +52,7 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
     const updatedFavorites = favorites.filter((fav) => fav.id !== id);
     setfavorites(updatedFavorites);
 
-    await fetch(`http://localhost:3000/Favorites/${id}`, {
+    await fetch(`http://localhost:3001/Favorites/${id}`, {
       method: "DELETE",
     });
   };
