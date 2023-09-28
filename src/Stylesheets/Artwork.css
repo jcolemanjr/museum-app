@@ -1,107 +1,224 @@
 /* Resetting default margins and paddings */
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
 css * {
-    font-family: "MetSans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "MetSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /* Setting a background color or image for the website */
 body {
-    background-color: #ffe3b0; /* Light brown background */
-    
+  background-image: url(../Assets/lion.jpg);
 }
 
-.about{
-    text-align: center;
-    font-family: "MetSans","Helvetica Neue",Helvetica,Arial,sans-serif;
+.about {
+  text-align: center;
+  font-family: "MetSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.favorites{
-    text-align: center;
+.favorites {
+  text-align: center;
 }
 
-.search{
-    display: flex;
-    justify-content: center;
+.pleaseWork {
+  justify-content: center;
+  display: flex;
 }
 
-.galleryHeader{
-    text-align: center;
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../Assets/greensnot.png);
+  border-radius: 30px;
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 8px;
+  text-align: center;
+  color: #fff;
+}
+
+.search:hover {
+  box-shadow: 0 6px 5px 0 rgba(7, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.galleryHeader {
+  text-align: center;
+  color: #e5ff00;
+  font-size: 500%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(10, 58, 10);
 }
 
 /* Creating a header for the website */
 header {
-    background-color: #333; /* Dark gray header */
-    color: #fff; /* White text */
-    padding: 20px;
-    text-align: center;
+  background-color: #333; /* Dark gray header */
+  color: #fff; /* White text */
+  padding: 20px;
+  text-align: center;
 }
 
 /* Styling the navigation menu */
 nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #444; /* Dark gray navigation background */
-    padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../Assets/navstone.png);
+  padding: 10px 0;
 }
 
 nav a {
-    color: #fff; /* White text */
-    text-decoration: none;
-    margin: 0 10px;
+  color: #fff; /* White text */
+  text-decoration: none;
+  margin: 0 10px;
+  font-family: cursive;
+}
+
+nav a:hover {
+  font-style: italic;
+  font-weight: 600;
+  color: aquamarine;
 }
 
 /* Styling the main content area */
 .main-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 /* Creating a grid layout for the gallery */
 .artpiece {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  overflow-y: auto;
+  max-height: 90vh;
 }
 /*this makes the columns*/
-.artwork{
-    position: relative;
-    overflow: hidden;
-    width: 100%; 
-    max-width: 100%; 
-    box-sizing: border-box;
+.artwork {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 6px double #facc01;
+  background: rgba(197, 106, 106, 0.473);
+  margin: auto;
+  padding: 15px 10px;
+  min-height: 625px;
 }
 
-.favorites{
-    position: relative;
-    overflow: hidden;
-    width: 100%; 
-    max-width: 100%; 
-    box-sizing: border-box;
+.favorites {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Styling individual artwork details */
 .artpiece {
-    background-color: #fff; /* White background */
-    padding: 10px;
-    text-align: center;
+  background-image: url(../Assets/Background.jpg);
+  padding: 10px;
+  text-align: center;
 }
 
 .artpiece {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .artpiece {
-    font-style: italic;
-    color: #000000; /* Gray text */
+  font-style: italic;
+  color: #000000; /* Gray text */
 }
 /* Styling the footer */
 footer {
-    background-color: #333; /* Dark gray footer */
-    color: #fff; /* White text */
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  background-color: #333; /* Dark gray footer */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.removeButton {
+  border: none;
+  outline: none;
+  padding: 8px 25px;
+  background: rgb(107, 10, 10);
+  color: #f1dc1d;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0 6px 5px 0 rgba(7, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.addButton {
+  border: none;
+  outline: none;
+  padding: 8px 25px;
+  background: rgb(11, 82, 14);
+  color: #f1dc1d;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-top: 20px;
+  box-shadow: 0 6px 5px 0 rgba(7, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
 }

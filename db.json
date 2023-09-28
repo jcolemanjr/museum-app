@@ -1,26 +1,5 @@
 {
-  "Favorites": [
-    {
-      "title": "Drum",
-      "artist": "Ashanti (Asante)",
-      "image": "https://images.metmuseum.org/CRDImages/mi/mobile-large/203718.jpg",
-      "date": "19th century",
-      "medium": "Wood, hide, associated human skulls",
-      "description": "Ashanti (Asante) (Africa)",
-      "accessionNumber": "89.4.1271",
-      "id": 1
-    },
-    {
-      "title": "Zanze",
-      "artist": "Ashanti (Asante)",
-      "image": "https://images.metmuseum.org/CRDImages/mi/mobile-large/midp89.2.190.jpg",
-      "date": "late 19th century",
-      "medium": "Wood",
-      "description": "Ashanti (Asante) (Africa)",
-      "accessionNumber": "89.2.190",
-      "id": 2
-    }
-  ],
+  "Favorites": [],
   "Artwork": [
     {
       "title": "Africa",
