@@ -11,6 +11,11 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
   // const [favorites, setfavorites] = useState([]);
   const [filteredArtwork, setfilteredArtwork] = useState("");
   //   console.log(filteredArtwork);
+  const [selectedArtwork, setSelectedArtwork] = useState(null);
+
+  const handleArtworkClick = (artwork) => {
+    setSelectedArtwork(artwork);
+  };
 
   useEffect(() => {
     // Fetch the initial state of favorites
@@ -60,6 +65,7 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
 
     return (
       <Artwork
+        onClick={() => handleArtworkClick(piece)}
         key={`${piece.accessionNumber}${piece.image}`}
         artist={piece.artist}
         title={piece.title}
@@ -87,6 +93,11 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
       <h1 className="galleryHeader">Gallery</h1>
       <Search setfilteredArtwork={setfilteredArtwork} />
       <div className="artpiece">{artPiece}</div>
+      {selectedArtwork && (
+        <div className="interstitial">
+          <img className="interimage" onClick={() => setSelectedArtwork(null)} src={selectedArtwork.image} alt={selectedArtwork.title} />
+        </div>
+      )}
     </div>
   );
 }
