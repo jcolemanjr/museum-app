@@ -2,13 +2,13 @@
   "Favorites": [
     {
       "title": "Africa",
-      "artist": "Royal Porcelain Manufactory, Berlin",
-      "image": "https://images.metmuseum.org/CRDImages/es/mobile-large/170280.jpg",
-      "date": "1751–57",
+      "artist": "Frankenthal Porcelain Manufactory",
+      "image": "https://images.metmuseum.org/CRDImages/es/mobile-large/170277.jpg",
+      "date": "ca. 1765",
       "medium": "Hard-paste porcelain",
-      "description": "Royal Porcelain Manufactory, Berlin (German, founded 1763)",
-      "accessionNumber": "59.208.16",
-      "id": 1
+      "description": "Frankenthal Porcelain Manufactory (German)",
+      "accessionNumber": "59.208.13",
+      "id": 2
     },
     {
       "title": "Drum",
@@ -21,26 +21,6 @@
       "id": 3
     },
     {
-      "title": "Greenstone polyhedron inscribed with letters of the Greek alphabet",
-      "artist": "",
-      "image": "https://images.metmuseum.org/CRDImages/gr/mobile-large/DP146292.jpg",
-      "date": "2nd–1st century BCE",
-      "medium": "Greenstone",
-      "description": " ",
-      "accessionNumber": "27.122.5",
-      "id": 4
-    },
-    {
-      "title": "Snake Charmer at Tangier, Africa",
-      "artist": "Louis C. Tiffany",
-      "image": "https://images.metmuseum.org/CRDImages/ad/mobile-large/DT11616.jpg",
-      "date": "1872",
-      "medium": "Oil on canvas",
-      "description": "Louis C. Tiffany (American, New York 1848–1933 New York)",
-      "accessionNumber": "21.170",
-      "id": 5
-    },
-    {
       "title": "Zanze",
       "artist": "Ashanti (Asante)",
       "image": "https://images.metmuseum.org/CRDImages/mi/mobile-large/midp89.2.190.jpg",
@@ -48,27 +28,17 @@
       "medium": "Wood",
       "description": "Ashanti (Asante) (Africa)",
       "accessionNumber": "89.2.190",
-      "id": 6
+      "id": 4
     },
     {
-      "title": "Drum",
-      "artist": "Zulu people",
-      "image": "https://images.metmuseum.org/CRDImages/mi/mobile-large/191203.jpg",
-      "date": "19th century",
-      "medium": "Wood, fiber",
-      "description": "(?) Zulu people (South Africa)",
-      "accessionNumber": "89.4.536",
-      "id": 7
-    },
-    {
-      "title": "Drum",
-      "artist": "Zulu people",
-      "image": "https://images.metmuseum.org/CRDImages/mi/mobile-large/244237.jpg",
-      "date": "19th century",
-      "medium": "Wood, stain, hide",
-      "description": "(?) Zulu people (South Africa)",
-      "accessionNumber": "89.4.537",
-      "id": 8
+      "title": "Koumdyeh",
+      "artist": "Sarakole People",
+      "image": "https://images.metmuseum.org/CRDImages/mi/mobile-large/MUS224Aright.jpg",
+      "date": "late 19th century",
+      "medium": "Coconut, horsehair, leather, copper, brass",
+      "description": "Sarakole People (Sierra Leone, Africa)",
+      "accessionNumber": "89.4.477",
+      "id": 5
     }
   ],
   "Artwork": [

@@ -243,6 +243,7 @@ button:hover span:after {
   background-image: url(../Images/MetEntrance.jpg);
   background-size: cover;
   background-position: center;
+  
 }
 
 .introText {
@@ -253,6 +254,7 @@ button:hover span:after {
   background-color: rgba(210, 180, 140, 0.8);
   font-size: 20px;
   text-align: left;
+  font-family: "MetSans", "Helvetica Neue";
 }
 
 .home {
@@ -278,4 +280,12 @@ button:hover span:after {
 }
 .interimage {
   min-height: 75%;
+}
+
+.visitorNote {
+  font-size: larger;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -24,6 +24,7 @@ const handleArtworkClick = (artwork) => {
           src="/Assets/One Night in Bangkok.mp3"
           type="audio/mpeg"
           autoPlay
+          loop
         />
         <div>
           <h1 className="favorites">Favorites</h1>
