@@ -8,7 +8,7 @@ function About() {
 
   return (
     <div className="About">
-      <h1 className="home">Home</h1>
+      <h1 className="home">Welcome to the Mini-Met</h1>
 
       <audio
         className="secondAudio"
