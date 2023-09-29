@@ -1,26 +1,5 @@
 {
-  "Favorites": [
-    {
-      "title": "Drum",
-      "artist": "Ashanti (Asante)",
-      "image": "https://images.metmuseum.org/CRDImages/mi/mobile-large/203718.jpg",
-      "date": "19th century",
-      "medium": "Wood, hide, associated human skulls",
-      "description": "Ashanti (Asante) (Africa)",
-      "accessionNumber": "89.4.1271",
-      "id": 3
-    },
-    {
-      "title": "Adọdwe (plural mmọdwe)",
-      "artist": "Ashanti (Asante)",
-      "image": "https://images.metmuseum.org/CRDImages/mi/mobile-large/260641.jpg",
-      "date": "early 20th century",
-      "medium": "ivory, jaw bones, blood, rattan",
-      "description": "Ashanti (Asante) (Africa)",
-      "accessionNumber": "89.4.1499",
-      "id": 8
-    }
-  ],
+  "Favorites": [],
   "Artwork": [
     {
       "title": "Africa",
@@ -3516,6 +3495,21 @@
       "medium": "unalloyed copper",
       "accessionNumber": "29.2.8",
       "galleryInformation": "On view at The Met Fifth Avenue in <a href='https://maps.metmuseum.org/?feature=LTczLjk2MjEwMDcyLDQwLjc4MDEyNjRAbG1ANTExNDY3ODY1MDAy' target='_blank'>Gallery 109</a>"
+    },
+    {
+      "title": "Cooper's Actual Toes",
+      "description": "A classmate in the Flatiron Cohort of 2023 sent me this photo; He's a dirty boy",
+      "artist": "Collaborative effort between Cooper Lindsley & Christopher Orth",
+      "culture": "uncultured",
+      "teaserText": "",
+      "url": "/art/collection/search/555983?&sortBy=Relevance&ft=egypt&offset=0&rpp=50&amp;pos=37",
+      "image": "/Assets/cooptoe2.png",
+      "regularImage": "eg/web-additional/29.2.8_EGDP014604.jpg",
+      "largeImage": "eg/web-large/29.2.8_EGDP014604.jpg",
+      "date": "Only the Lord Knows",
+      "medium": "Probably an Iphone",
+      "accessionNumber": "69.69.69",
+      "galleryInformation": "He's a dirty boy"
     },
     {
       "title": "Shabti of the Treasurer of Lower Egypt Pa-abumeh, called Psamtik-seneb",
