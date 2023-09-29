@@ -15,6 +15,7 @@ function About() {
         src="/Assets/symphony2.mp3"
         type="audio/mpeg"
         autoPlay
+        loop
       />
 
       <div className="about">

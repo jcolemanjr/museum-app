@@ -27,7 +27,7 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
   const filteredArt = artworks.filter((art) => {
     return ((art.title?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
       (art.artist?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
-      (art.date?.toString()?.toLowerCase() ?.includes(filteredArtwork.toLowerCase()) ?? false) ||
+      (art.date?.toString()?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
       (art.medium?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
       (art.culture?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
       (art.description?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false)
@@ -89,6 +89,7 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
         src="/Assets/symphony2.mp3"
         type="audio/mpeg"
         autoPlay
+        loop
       />
       <h1 className="galleryHeader">Gallery</h1>
       <Search setfilteredArtwork={setfilteredArtwork} />
