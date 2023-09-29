@@ -24,6 +24,10 @@ body {
   text-align: center;
 }
 
+.active {
+  color: #facc01; /* or any color you prefer */
+}
+
 .pleaseWork {
   justify-content: center;
   display: flex;
