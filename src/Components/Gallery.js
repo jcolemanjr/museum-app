@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Artwork from "./Artwork";
 import Search from "./Search";
 
@@ -8,29 +8,49 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
     audio.volume = 0.2;
   }, []);
 
-  // const [favorites, setfavorites] = useState([]);
   const [filteredArtwork, setfilteredArtwork] = useState("");
-  //   console.log(filteredArtwork);
   const [selectedArtwork, setSelectedArtwork] = useState(null);
+  const globalClickListenerTimeout = useRef(null);
 
   const handleArtworkClick = (artwork) => {
     setSelectedArtwork(artwork);
   };
 
+  const handleGlobalClick = () => {
+    setSelectedArtwork(null);
+  };
+
   useEffect(() => {
-    // Fetch the initial state of favorites
+    if (selectedArtwork) {
+      if (globalClickListenerTimeout.current) {
+        clearTimeout(globalClickListenerTimeout.current);
+      }
+      globalClickListenerTimeout.current = setTimeout(() => {
+        document.addEventListener('click', handleGlobalClick);
+      }, 100);
+    }
+    return () => {
+      document.removeEventListener('click', handleGlobalClick);
+      if (globalClickListenerTimeout.current) {
+        clearTimeout(globalClickListenerTimeout.current);
+      }
+    };
+  }, [selectedArtwork]);
+
+  useEffect(() => {
     fetch("http://localhost:3001/Favorites")
       .then((res) => res.json())
       .then((data) => setfavorites(data));
-  },[]);
+  }, []);
 
   const filteredArt = artworks.filter((art) => {
-    return ((art.title?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
-      (art.artist?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
-      (art.date?.toString()?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
-      (art.medium?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
-      (art.culture?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false) ||
-      (art.description?.toLowerCase()?.includes(filteredArtwork.toLowerCase()) ?? false)
+    return (
+      art.title?.toLowerCase().includes(filteredArtwork.toLowerCase()) ||
+      art.artist?.toLowerCase().includes(filteredArtwork.toLowerCase()) ||
+      art.date?.toString().toLowerCase().includes(filteredArtwork.toLowerCase()) ||
+      art.medium?.toLowerCase().includes(filteredArtwork.toLowerCase()) ||
+      art.culture?.toLowerCase().includes(filteredArtwork.toLowerCase()) ||
+      art.description?.toLowerCase().includes(filteredArtwork.toLowerCase())
     );
   });
 
@@ -42,10 +62,10 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
       },
       body: JSON.stringify(artwork),
     })
-      .then((res) => res.json())
-      .then((data) => {
-        setfavorites((prevFavorites) => [...prevFavorites, data]);
-      });
+    .then((res) => res.json())
+    .then((data) => {
+      setfavorites((prevFavorites) => [...prevFavorites, data]);
+    });
   };
 
   const removeFromFavorites = async (id) => {
@@ -57,7 +77,6 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
     });
   };
 
-  //map goes here --- creating an Artwork component for each item
   const artPiece = filteredArt.map((piece) => {
     const matchingFavorite = favorites.find(
       (fav) => fav.accessionNumber === piece.accessionNumber
@@ -95,8 +114,8 @@ function Gallery({ artworks, setArtworks, setfavorites, favorites }) {
       <Search setfilteredArtwork={setfilteredArtwork} />
       <div className="artpiece">{artPiece}</div>
       {selectedArtwork && (
-        <div className="interstitial">
-          <img className="interimage" onClick={() => setSelectedArtwork(null)} src={selectedArtwork.image} alt={selectedArtwork.title} />
+        <div className="interstitial" onClick={handleGlobalClick}>
+          <img className="interimage" onClick={(e) => e.stopPropagation()} src={selectedArtwork.image} alt={selectedArtwork.title} />
         </div>
       )}
     </div>
