@@ -41,6 +41,7 @@ body {
   border-radius: 30px;
   margin-bottom: 10px;
   width: 400px;
+  border: double 1px #facc01
 }
 
 input::placeholder {
@@ -58,6 +59,11 @@ input {
 
 .search:hover {
   box-shadow: 0 6px 5px 0 rgba(7, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.searchBar:focus {
+  color:#facc01;
+  border-color: #fff;
 }
 
 .galleryHeader {
