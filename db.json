@@ -1,16 +1,6 @@
 {
   "Favorites": [
     {
-      "title": "Africa",
-      "artist": "Frankenthal Porcelain Manufactory",
-      "image": "https://images.metmuseum.org/CRDImages/es/mobile-large/170277.jpg",
-      "date": "ca. 1765",
-      "medium": "Hard-paste porcelain",
-      "description": "Frankenthal Porcelain Manufactory (German)",
-      "accessionNumber": "59.208.13",
-      "id": 2
-    },
-    {
       "title": "Drum",
       "artist": "Ashanti (Asante)",
       "image": "https://images.metmuseum.org/CRDImages/mi/mobile-large/203718.jpg",
@@ -21,24 +11,14 @@
       "id": 3
     },
     {
-      "title": "Zanze",
+      "title": "Adọdwe (plural mmọdwe)",
       "artist": "Ashanti (Asante)",
-      "image": "https://images.metmuseum.org/CRDImages/mi/mobile-large/midp89.2.190.jpg",
-      "date": "late 19th century",
-      "medium": "Wood",
+      "image": "https://images.metmuseum.org/CRDImages/mi/mobile-large/260641.jpg",
+      "date": "early 20th century",
+      "medium": "ivory, jaw bones, blood, rattan",
       "description": "Ashanti (Asante) (Africa)",
-      "accessionNumber": "89.2.190",
-      "id": 4
-    },
-    {
-      "title": "Koumdyeh",
-      "artist": "Sarakole People",
-      "image": "https://images.metmuseum.org/CRDImages/mi/mobile-large/MUS224Aright.jpg",
-      "date": "late 19th century",
-      "medium": "Coconut, horsehair, leather, copper, brass",
-      "description": "Sarakole People (Sierra Leone, Africa)",
-      "accessionNumber": "89.4.477",
-      "id": 5
+      "accessionNumber": "89.4.1499",
+      "id": 8
     }
   ],
   "Artwork": [

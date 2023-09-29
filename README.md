@@ -1,12 +1,26 @@
-PHASE 2 PROJECT!
+--------------------------------------------------------------------
 
-This is a presentation of selected artwork from the Metropolitan Museum of Art in New York City. This is a React app using client-side routing to present a Home page, Gallery page, and Favorites page. The app relies on a db.json server with two arrays of objects, one with content populating the Gallery page, and the other populating the Favorites page based on POST requests made via artwork on the Gallery page and DELETE requests from either the Gallery or Favorites page.
+--------------------------------------------------------------------
+## PHASE 2 PROJECT!
 
-The app has various other functionality, including interstitial popup image based on click events on images in Gallery and Favorites to open and click off the interstitial image to close; audio files that autoplay if the user is on Home, Gallery, or Favorites; and an embedded video that autoplays on a loop in Home.
+This is a presentation of selected artwork from the Metropolitan Museum of Art in New York City. This is a React app using client-side routing to present a Home page, Gallery page, and Favorites page. The app relies on a db.json server with two arrays of objects, one with content populating the Gallery page, and the other populating the Favorites page. The favorites page is based on POST requests made via artwork on the Gallery page and DELETE requests from either the Gallery or Favorites page.
 
-## Welcome to our website! Here's a brief introduction on how to navigate it and a layout of it's features.
-1. Run "npm install && npm run server"
+The app has various other functionalities, including an interstitial popup image based on click-events. These click-events are placed on images in the Gallery and Favorites section. We also added a click-event when you click around the interstitial image it will close. We also added audio files that autoplay if the user is on Home, Gallery, or Favorites; and an embedded video that autoplays on a loop in Home.
+
+--------------------------------------------
+![A short GIF of our website presentation](public/Assets/WebsiteHighQuality.gif)
+--------------------------------------------
+
+
+## Welcome to our website! 
+
+
+
+### Here's a brief introduction on how to navigate it & a layout of it's features:
+
+1. Run "npm install && npm run server" inside of a terminal
 2. Open new terminal and run "npm start"
+
 On page load you'll be greeted with our home page giving an intro to the real museum this site is based on. As well as a lovely song that was recorded inside the MET museum itself. 
 Using the nav bar in three simple steps:
 -Home will take you to our home page

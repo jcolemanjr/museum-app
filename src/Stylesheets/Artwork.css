@@ -1,12 +1,10 @@
 /* Resetting default margins and paddings */
-body,
-h1,
-h2,
-h3,
-p {
+body, h1, h2, h3, p {
   margin: 0;
   padding: 0;
 }
+
+
 css * {
   font-family: "MetSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -168,6 +166,7 @@ nav a:hover {
 .artpiece {
   font-style: italic;
   color: #000000; /* Gray text */
+  
 }
 /* Styling the footer */
 footer {
