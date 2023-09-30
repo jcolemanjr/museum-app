@@ -49,7 +49,7 @@ function Favorites({ removeFromFavorites, favorites }) {
       </div>
       <div className="artpiece">
         {favorites.length < 1 && (
-          <p className="visitorNote">"Add some artwork, please and thank you gentle skin pod." - Tyler Taylor</p>
+          <p className="visitorNote">"Feel free to add some artwork from Gallery!"</p>
         )}
         {favorites.map((artwork) => (
           <Artwork
